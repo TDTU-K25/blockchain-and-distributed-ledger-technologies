@@ -1,0 +1,21 @@
+{
+  "name": "started-near-app",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "https://github.com/eamondang/started-near-app",
+  "scripts": {
+    "install": "cd client && pnpm install",
+    "dev": "cd client && pnpm dev",
+    "deploy:start": "cd client && rm -rf .env && cd .. && cargo make dev-deploy && cd client && open \"http://localhost:3000\" && pnpm dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pnpm": "^8.12.1",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5"
+  }
+}

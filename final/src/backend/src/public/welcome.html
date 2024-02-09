@@ -1,0 +1,71 @@
+<!-- public/api_guide.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>API Usage Guide</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            h1,
+            h2 {
+                color: #333;
+            }
+
+            pre {
+                background-color: #f4f4f4;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>API Usage Guide</h1>
+
+        <h2>Product Endpoint</h2>
+        <pre>
+        GET /api/v1/product/all/:id              // Get all products :id = userWalletId
+        DELETE /api/v1/product/delete/:productId              // delete products by id 
+        GET /api/v1/product/:id                 // Get product by ID
+        POST /api/v1/product/add                // Add a new product
+            Request Body example:
+            {
+                "name": "Product Name",
+                "price": 20.99,
+                "description": "Product Description"
+                "userWalletId" : '1xxxx223123'
+                "media": "-----" 
+            }
+
+        PUT /api/v1/product/edit/:id         // Edit a product by ID
+            Request Body example:
+            {
+                "name": "Updated Product Name",
+                "price": 25.99,
+                "description": "Updated Product Description",
+                "media": "-----" ,
+                 "userWalletId" : '1xxxx223123'
+            }
+    </pre
+        >
+
+        <h2>User Endpoint</h2>
+        <pre>
+        GET /api/v1/user                 // Retrieve all users
+        POST /api/v1/user                // Create a new user
+    </pre
+        >
+
+        <h2>QR Endpoint</h2>
+        <pre>
+        GET /api/v1/qr                   // Retrieve QR code
+        POST /api/v1/qr                  // Create a new QR code
+    </pre
+        >
+    </body>
+</html>

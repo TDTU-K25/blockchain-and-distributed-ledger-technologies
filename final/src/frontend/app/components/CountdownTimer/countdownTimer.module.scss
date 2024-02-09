@@ -1,0 +1,33 @@
+.clock {
+  display: flex;
+  justify-content: space-between;
+  div {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4rem;
+    margin: 0 0.5rem;
+    border-radius: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .clock {
+    max-width: 90%;
+    div {
+      width: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clock {
+    max-width: 100%;
+    div {
+      width: 4rem;
+    }
+  }
+}

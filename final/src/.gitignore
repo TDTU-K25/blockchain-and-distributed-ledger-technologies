@@ -1,0 +1,9 @@
+/contract/target/*
+/client/node_modules
+/client/.next/
+/.DS_Store
+/client/public/.DS_Store
+/client/.DS_Store
+/client/.vscode/
+/neardev/
+/contract/neardev/
